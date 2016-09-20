@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">ConvertidorMKM</string>
     <string name="convertidor_d_apos_unitats_introdueix_un_valor_i_en_quina_unitat_vols_convertir">Convertidor d\'unitats. Introdueix un valor i en quina unitat vols convertir.</string>
-    <string name="_2cse">2cse</string>
+    <string name="_2cse">2cse -- Alejandro Jurnet</string>
     <string name="km">Km</string>
     <string name="milles">Milles</string>
     <string name="unitat_actual">Km</string>

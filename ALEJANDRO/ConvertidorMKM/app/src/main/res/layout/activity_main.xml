@@ -1,13 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="lyrical.alejandro.convertidormkm.MainActivity"
     android:orientation="vertical"
     android:weightSum="1">
 
@@ -22,28 +20,23 @@
 
     <LinearLayout
         android:orientation="horizontal"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView2"
-        android:layout_alignParentEnd="true"
         android:layout_marginTop="25dp"
-        android:weightSum="1">
+        android:weightSum="1"
+        android:layout_gravity="left|center_horizontal"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="10dp">
 
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="numberDecimal"
             android:ems="10"
-            android:id="@+id/editText"
-            android:layout_below="@+id/textView2"
-            android:layout_alignParentStart="true"
+            android:id="@+id/EntradaDades"
             android:layout_marginTop="32dp"
-            android:layout_gravity="left" />
-
-        <Space
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="0.60" />
+            android:layout_marginRight="5dp"
+            android:layout_gravity="right" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -51,17 +44,16 @@
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:text="@string/unitat_actual"
             android:id="@+id/textView3"
-            android:layout_toEndOf="@+id/editText"
-            android:layout_marginTop="10dp" />
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="2dp" />
     </LinearLayout>
 
     <RadioGroup
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/radioGroup"
-        android:layout_above="@+id/calcular"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="21dp">
+        android:layout_marginBottom="21dp"
+        android:layout_marginLeft="25dp">
 
         <RadioButton
             android:layout_width="wrap_content"
@@ -79,28 +71,38 @@
 
     </RadioGroup>
 
+
     <LinearLayout
         android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp">
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
             android:text="@string/calcular"
             android:id="@+id/calcular"
             android:layout_centerVertical="true"
             android:layout_alignParentStart="true"
-            android:layout_gravity="center_vertical" />
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="25dp"
+            android:layout_weight="2"
+            android:onClick="convertir"
+            android:nestedScrollingEnabled="false" />
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
             android:text="Netejar"
             android:id="@+id/button2"
             android:layout_alignTop="@+id/calcular"
             android:layout_alignEnd="@+id/textView2"
-            android:layout_gravity="center_vertical" />
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:backgroundTint="#f44f4f"
+            android:onClick="netejar" />
     </LinearLayout>
 
     <Space
@@ -114,8 +116,6 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="@string/_2cse"
         android:id="@+id/textView"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
         android:layout_gravity="end" />
 
 </LinearLayout>
