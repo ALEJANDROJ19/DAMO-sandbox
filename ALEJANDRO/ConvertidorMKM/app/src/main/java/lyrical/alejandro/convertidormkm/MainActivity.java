@@ -1,5 +1,6 @@
 package lyrical.alejandro.convertidormkm;
 
+import android.app.Activity;
 import android.graphics.Color;
 import android.support.annotation.BoolRes;
 import android.support.design.widget.Snackbar;
@@ -9,7 +10,7 @@ import android.view.View;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
     public static final double FACTOR_CONVERSSIO = 0.62137119;
 
     @Override
