@@ -12,7 +12,9 @@ public class MainActivity extends AppCompatActivity implements
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         BlankFragment frag = BlankFragment.newInstance("a","b");
-        getSupportFragmentManager().beginTransaction().add(R.id.fragment_container, frag).commit();
+        RadioGroup2 frag2 = RadioGroup2.newInstance(2);
+        //getSupportFragmentManager().beginTransaction().add(R.id.fragment_container, frag).commit();
+        getSupportFragmentManager().beginTransaction().add(R.id.fragment_container, frag2).commit();
     }
 
     public void onFragmentInteraction(Uri uri){
