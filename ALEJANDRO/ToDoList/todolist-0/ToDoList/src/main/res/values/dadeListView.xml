@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="dadesEstatiques">
+        <item>"Un"</item>
+        <item>"Dos"</item>
+        <item>"Tres"</item>
+        <item>"Quatre"</item>
+        <item>"Cinc"</item>
+        <item>"Sis"</item>
+        <item>"Set"</item>
+        <item>"Vuit"</item>
+        <item>"Nou"</item>
+    </array>
+</resources>

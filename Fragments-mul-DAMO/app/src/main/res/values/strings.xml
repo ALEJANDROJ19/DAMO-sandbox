@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">FragmentsDAMO</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="instruccions">El que s\'escrigui en el camp es mostra en format llista a continuació</string>
+    <string name="hint">Entra un valor</string>
+    <string name="Resultat">Resultat</string>
+    <string name="hintResultat">Aquí apareixerà el resultat</string>
+    <string name="esborra">Esborra</string>
+    <string name="nouText">nouText</string>
+    <string name="afegeix">Afegeix</string>
+</resources>
