@@ -5,10 +5,18 @@ import android.graphics.Color;
 public class Punt {
     private double coordX;
     private double coordY;
-    private Color color;
+    private int color;
     private double mida;
 
-    public Punt(double coordX, double coordY, Color color, double mida) {
+
+    /**
+     *
+     * @param coordX Coordenada eix X
+     * @param coordY Coordenada eix Y
+     * @param color Color
+     * @param mida Diametre
+     */
+    public Punt(double coordX, double coordY, int color, double mida) {
         this.coordX = coordX;
         this.coordY = coordY;
         this.color = color;
@@ -23,7 +31,7 @@ public class Punt {
         return coordY;
     }
 
-    public Color getColor() {
+    public int getColor() {
         return color;
     }
 
@@ -39,7 +47,7 @@ public class Punt {
         this.coordY = coordY;
     }
 
-    public void setColor(Color color) {
+    public void setColor(int color) {
         this.color = color;
     }
 

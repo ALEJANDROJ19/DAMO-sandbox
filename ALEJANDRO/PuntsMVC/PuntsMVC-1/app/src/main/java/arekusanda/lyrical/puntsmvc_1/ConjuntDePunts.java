@@ -20,6 +20,10 @@ public class ConjuntDePunts {
         avisarObservador();
     }
 
+    public List<Punt> getPunts() {
+        return punts;
+    }
+
     private void avisarObservador() {
         if(observador != null)
             observador.onCanviConjuntdePunts();

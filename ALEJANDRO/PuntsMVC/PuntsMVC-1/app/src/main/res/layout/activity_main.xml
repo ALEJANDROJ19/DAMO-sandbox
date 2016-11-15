@@ -19,12 +19,13 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="25dp">
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="2">
 
         <EditText
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="fill_parent"
             android:id="@+id/coordX"
             android:layout_weight="1"
             android:layout_marginRight="10dp"
@@ -33,7 +34,7 @@
 
         <EditText
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="fill_parent"
             android:id="@+id/coordY"
             android:layout_weight="1"
             android:layout_marginLeft="10dp"
@@ -75,5 +76,6 @@
         android:layout_weight="10"
         android:visibility="visible"
         android:focusableInTouchMode="true"
+        android:background="@color/lt_grey"
         android:clickable="true"/>
 </LinearLayout>
